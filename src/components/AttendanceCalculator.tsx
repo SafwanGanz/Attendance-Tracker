@@ -3,6 +3,7 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import RefreshIcon from '@mui/icons-material/Refresh';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function AttendanceCalculator() {
   const [currentClasses, setCurrentClasses] = useState('');
@@ -85,12 +86,23 @@ export default function AttendanceCalculator() {
       <h2 className="text-2xl font-bold text-gray-900">Attendance Calculator</h2>
 
       <div className="rounded-lg shadow-lg p-6" style={{ background: 'linear-gradient(to right, #a855f7, #4f46e5)' }}>
-        <div className="flex items-center gap-3">
-          <CalculateIcon fontSize="large" style={{ color: '#ffffff', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
-          <div>
-            <h3 className="text-xl font-bold mb-1" style={{ color: '#ffffff', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Plan Your Attendance</h3>
-            <p className="text-sm font-semibold" style={{ color: '#ffffff', textShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>Calculate how many classes you need to attend</p>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <CalculateIcon fontSize="large" style={{ color: '#ffffff', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
+            <div>
+              <h3 className="text-xl font-bold mb-1" style={{ color: '#ffffff', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Plan Your Attendance</h3>
+              <p className="text-sm font-semibold" style={{ color: '#ffffff', textShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>Calculate how many classes you need to attend</p>
+            </div>
           </div>
+          <a 
+            href="https://github.com/SafwanGanz" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="transition-opacity hover:opacity-80"
+            title="GitHub Profile"
+          >
+            <GitHubIcon fontSize="large" style={{ color: '#ffffff', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
+          </a>
         </div>
       </div>
 
