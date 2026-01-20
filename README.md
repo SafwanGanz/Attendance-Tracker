@@ -12,8 +12,8 @@ A standalone web-based attendance tracking system for students. Track attendance
 
 Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd attendance_management-main
+git clone https://github.com/SafwanGanz/Attendance-Tracker
+cd Attendance-Tracker
 ```
 
 Install dependencies:
